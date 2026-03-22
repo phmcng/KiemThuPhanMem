@@ -82,3 +82,28 @@ Run As → JUnit Test
 
 ## 8. Tài liệu tham khảo
 - JUnit 5 User Guide: https://junit.org/junit5/docs/current/user-guide/
+
+
+# Báo cáo Thực hành Kiểm thử tự động End-to-End với Cypress
+
+## 1. Thông tin sinh viên
+- Họ tên: Phạm Tuấn Cường
+- Mã sinh viên: BCS230108
+- Học phần: Kiểm thử phần mềm
+
+## 2. Các kịch bản kiểm thử đã thực hiện
+Dự án bao gồm các kịch bản kiểm thử cho trang web `saucedemo.com`:
+- **Đăng nhập:** Thành công với `standard_user` và thất bại với tài khoản sai.
+- **Giỏ hàng:** Thêm sản phẩm thành công, kiểm tra số lượng hiển thị.
+- **Sắp xếp:** Kiểm tra tính năng lọc giá từ thấp đến cao (Price low to high).
+- **Xóa sản phẩm:** Kiểm tra nút "Remove" hoạt động và cập nhật giỏ hàng.
+- **Thanh toán:** Kiểm tra quy trình điền thông tin và chuyển hướng đến trang Overview.
+
+## 3. Hướng dẫn chạy
+1. Cài đặt Node.js.
+2. Mở terminal tại thư mục này và chạy: `npm install`.
+3. Mở giao diện Cypress: `npx cypress open`.
+4. Chọn file `.cy.js` trong thư mục `e2e` để chạy.
+
+## 4. Kết quả thực hành
+![Kết quả chạy Test](./images/Cypress-test.png)
